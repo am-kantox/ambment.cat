@@ -1,0 +1,16 @@
+<!-- :page, :contents, :args, :project, :site, :all_pages, :all_posts, :all_tags -->
+
+<meta name="author" content="<%= @site.author %>" />
+<meta property="og:url" content="<%= Path.join([@site.server_root, @page.url]) %>" />
+<meta data-preact-helmet property="og:type" content="article">
+<meta data-preact-helmet property="og:title" content="<%= @page.title %>">
+<meta data-preact-helmet name="twitter:title" content="<%= @page.title %>">
+<meta data-preact-helmet name="description" content="<%= @page[:preview] %>">
+<meta data-preact-helmet property="og:description" content="<%= @page[:preview] %>">
+<meta data-preact-helmet name="twitter:description" content="<%= @page[:preview] %>">
+<meta data-preact-helmet property="og:image" content="<%= Path.join([@site.server_root, "card.png"])%>">
+<meta data-preact-helmet name="twitter:image" content="<%= Path.join([@site.server_root, "card.png"])%>">
+<meta data-preact-helmet name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="<%= Path.join([@site.server_root, @page.url]) %>" />
+
+<link rel="stylesheet" href="<%= asset "css/ambment.css" %>">

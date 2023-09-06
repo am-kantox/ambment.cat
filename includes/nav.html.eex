@@ -1,0 +1,7 @@
+<ul>
+  <li><a href="<%= page "index" %>">🏠</a></li>
+  <li><a href="<%= page "awry" %>">📎</a></li>
+  <li><a href="<%= page "resume" %>">📖</a></li>
+  <li><a href="<%= page "favorites" %>">💜</a></li>
+  <li><a href="<%= base "posts" %>">📔</a></li>
+</ul>

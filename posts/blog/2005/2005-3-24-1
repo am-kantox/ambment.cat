@@ -1,0 +1,247 @@
+Making corporate site
+
+> Written by request of [Bradstreet Nord](http://dnb.spb.ru) 
+
+§3 Site Needed
+
+One day we faced the necessity to make a site for our consulting company.
+
+§4 Our Client
+
+We figured, well, we thought we figured, how the average client of our company looks like. She is a _vice-president_ of _middle-size_ business, nearly _30-year-old_, wearing _black-tied-jeans_ and just bought a Festina watch (already the Swiss one, but not a Tissot yet). She works 24x7, has masters in economics and lives in adorable medley of _just-out-of-colledge_ delight and _wow-i-am-responsible-for-that_ hazard. She is to computers like a duck to water, expecting the same from the chief and pinning the colleagues up about.  
+She feels it’s time to get on and she takes opportunities to do so. She digs all around to find a problem to solve and solves it occasionally. She is successful, pleased with herself and her life, slightly tired but not bored.  
+And, yes, we are to sell our service over the internet.
+
+§4 Site Is To Be
+
+
+
+The moment we understood we are to build the site to sell our service more efficiently, we got clearly that we do not realize _how the hell_ we are going to start. Needless to say, we had the common deceitful set of requirements to the site. It was to be:
+
+•  passing rich;
+•  distinguished from rivals’ sites;
+•  making great impression;
+•  bringing in return.
+
+
+
+Soon we realized these are not _to be applied_. All these above are just generic senseless void phrases, suitable to impress the CEOs but absolutely useless for both customers and potential clients. Stock phrases are good to be spoken on Monday meetings, especially when there is a forthcoming deadline and we are surely behind. And, finally, stock phrases always drive us bonkers.
+
+§4 Let’s do it now!
+
+
+
+That’s why we calmed down the hotheads and deferred the site designing. We concentrated on the main task. We were to understand, what is _being awaited_ from our site by our average client, portrayed above. A _what-the-hell-does-she-wants_ question was commuted for these:
+
+* how does it happen she is visiting our site?
+* what does she expect to find on the main page?
+* how to keep her surfing, to get her inside?
+* how to impress her? does she love animated buttons, flash or plain text?
+* does she save pages to browse offline? does she print content? 
+* how educated is she in web surfing? does she use _mailing-list-like_ features? does she know what and you? do you know?  RSS†and you? do you know? †  is for?
+* this list is to be extended.
+
+
+
+And we started to gain information to assure ourselves we are to produce what is really needed, rather than what is fashionable today. We put answers to the questions on the board as they appeared, in random order. We were to cover all the holes—that’s why the order was not so crucial.  
+We named our average customer Jessica to ease the concordance of her predilections/biases and blandly called her Jess, _to win a tender_.
+
+§3 Answers To The Question
+
+§4 Design Concepts
+
+\[…\]
+  
+§4 Coding Language?
+
+
+
+Now, in XXI century, the site is to appear in modern HTML standard, taken place of HTML 4.01 XHTML†modern HTML standard, taken place of HTML 4.01† . Therefore, each our file will have a header of a view: 
+
+```xml
+<?xml version= "1.0"  encoding= "UTF-8" ?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html  xmlns= "http://www.w3.org/1999/xhtml" xml:lang= "en" lang= "en"> 
+```
+
+§4 To Flash Or Not To Flash?
+
+
+
+That was not even a question, but we still brainstormed it.  
+Jess has no sufficient spare time to revel in our creation. We are not going to make absolutely Spartan design, of course, but we can not waste visitors’ time showing them chatoyant holograms. We will give links to the _best-of-art_ sites at a pinch. Oh, Jess, hopefully you are not an ardent Flash disciple!  
+Of course, there was no doubt to reject using animated buttons. That is not XIX century seen out, and we have already heard about.
+
+§4 Navigation
+
+
+
+The weakest link all around is always the navigation. And we decided to put a lot of effort to improve it on our site dramatically.
+
+ §4 News on our site
+
+ 
+
+Yeap, we *must* support newsfeeds on our site. This is the only way to keep our visitors _up-to-date_ with all our hotnews. This is the only way to turn Jess back to our site when we have new service/product released. This is the only way to give Jess a chance not to forget about us in a continuous round of business events.  
+There are actually two common ways to implement _up-to-date_ news accordance. Mailing lists are commonly used and easy to get. They require almost no specific knowledge to start receiving site updates from Jess. There is one and only dirty trick in mailing lists concept. The emails look much like spam and (!) they are being treated like spam within one week or even earlier. Let’s see. Jess was surfing the internet on Monday morning. She found great (hmmm.. it’s ours so we are free to call it as we like) site. She decided she wants to stay notified in advance about the service updates and she finally filled in the form to subscribe to mailing list.  
+Our site, to our pity, is not a joker blog, therefore we are not able to post news/announces twice a day. So, when the upcoming event was fired, to say, within a week, Jess got an email with some strange return address (e.g. _mailing-list_@ourdomain.com) and vague content of _ad-like_ view. She all of a sudden recalled, that she subscribed to this mailing list; she skimmed over the paragraphs and removed an email, somewhat annoyed.  
+Two weeks later (we still are not cranking the news out) Jess received another email from the totally forgotten sender. She made certain that the mail contains promotional content, got totally irritated and marked it as spam. She safely has a _spam-filter_ installed on her computer. Got the point? Our newsletters are junked from now on directly to Jess’ trashcan.  
+Voilá.  
+Hopefully, there is another solution to grant Jess an ability to stay _up-to-date_ with our news. It is stays for Really Simple Syndication or RDF Site Summary RSS†stays for Really Simple Syndication or RDF Site Summary† . It’s not as widely spread over the internet as mailing lists, but it is really more targeted, giving a better feedback. RSS is a news feed, provided by the site in a special _XML-based_ format. There are a lot of possibilities to read _RSS-feeds_; all the _standard-compliant_ browsers give an ability to read such news easily; there is also a lot of _RSS-Reader_ software all around. The main advantage of this format is that *the user* is to initiate the news fetching—when she *wants* to read them, when she *really requires* them. The user feels she is somehow in control, she does not get _spam-like_ messages, she just gained the currently required information on her demand.  
+The only problem is that Jess likely has no clue about what RSS is. So, we should provide a brief explanation of what RSS is, supply an RSS feed and still leave _mailing-list_ subscription for those who do not want to study new things. Not that we are really interested in such clients; but we probably still may be interested in their money.  
+Just in case, the screenshot below shows how Mozilla/Firefox gives a hint that there is an RSS feed supported by the site by displaying the icon in the _right-bottom_ corner of main window. 
+
+![http://img147.exs.cx/img147/8237/rssenabledicon9dy.png](http://img147.exs.cx/img147/8237/rssenabledicon9dy.png)
+
+  
+ 
+
+The user may click it and append the feed in her bookmarks. There is really a lot of great detailed explanations of how RSS works over the internet, so we stop discussing it here.  
+The only obstacle left to be mentioned is that to force browsers to show this icon, the HTML head tag should appear on the page: 
+
+```html
+<link rel= "alternate"
+      type= "application/rss+xml"
+      title= "Our company news"
+      href= "http://ourdomain.com/rss"/> 
+```
+
+ Here we go.  
+ 
+ §4 Browser Navigation
+
+ 
+
+There are few people who know that the level navigation became a standard in 1999 and is supported by all the _standard-compliant_ browsers:
+
+![http://img138.exs.cx/img138/2926/navenabledsite6ut.png](http://img138.exs.cx/img138/2926/navenabledsite6ut.png)
+
+  
+ 
+
+It’s to be used in HTML as shown below: 
+
+```html     
+<link rel= "start"
+      title= "Homepage"
+      href= "http://ourdomain.com/"/> 
+```
+
+The complete list of navigation items to be used is  [provided by W3C](http://www.w3.org/TR/html4/types.html#h-6.12).  
+Of course, Jess’ browser may lack an ability to show the standard navigation links. That’s why we’ll definitely make all the information on the site available from the cover page with ordinary HTML links. But we probably will give Jess a hint of ‘how to navigate more efficiently’.  
+Furthermore, these `link` references are very useful in cooperation with e.g. Google, Yahoo, Altavista etc. search engines†e.g. Google, Yahoo, Altavista etc.† . Each search engine analyses the contents of the `link` metatags to show requested pages in proper language (tag `link lang="..."`), to show the front page of a collection of documents (tag `link start="..."`), to show the printed version of a manual (tag `link media="print"`).
+  
+§4 Tiny Jocundity
+
+Have you ever seen the small pretty icons in IE’s favorites (own for every site)? Or, even more, if you are happy using Firefox, the icons appear in both address bar and tab caption. These are _so-called_ favorite icons: 
+
+```xml      
+<link  rel= "shortcut icon"  href= "/favicon.ico" /> 
+```
+  
+Distinguish your site appearance, make it recognizable within a fleeting glance!  
+
+§4 Site Presentation 
+
+Have you ever heard about the holy wars of type `the _A-tool_ is better than the _B-tool_’? If not, you obviously work in _not-IT-relative_ business.` This _R-browser_ is _quick-witted_, while the _Q-navigator_ is as sharp as a needle and the _T-one_ is evidently the most stable’. The amount of opinions is not less than an amount of people around.  
+That’s why we may not make any assumptions about what browser on what operating system Jess runs. And we _even do not need to_. The site should look impressive in every browser.  
+The design regarding what browser/Operating System, e.g.: Windows, MacOS, Linux OS†Operating System, e.g.: Windows, MacOS, Linux†  combination is used depends on:
+
+* *fonts*—nobody knows, whether Jess has anything but preinstalled fonts;
+* *screen resolution*—Apple Macintosh computers use MacOS system to operate Macintosh†Apple Macintosh computers use MacOS system to operate†  users have huge monitors with great resolution, while Jess’ secretary likely runs OS by Microsoft™, predecessor of Windows 2000 and Windows XP Win98†OS by Microsoft™, predecessor of Windows 2000 and Windows XP†  on The old-fashioned processor by Intel™, slow and ugly 586†The old-fashioned processor by Intel™, slow and ugly†  at it's last gasp. No need to mention printers have own resolution, that differs.
+* *decoration elements*—interpreted by different browsers _off-centre_.
+
+The solutions are given below, as they are common and may be applied to every site:
+
+* *fonts* are to be specified for each OS in stays for Cascading Style Sheet, please ask Google about CSS†stays for Cascading Style Sheet, please ask Google about†  accurately: 
+    
+`'Bookman L', New Roman, serif`
+
+Now, if Jess is on Macintosh, the site will appear in her preferred `serif` font, namely in `'Times New Roman'`, since she has neither `Georgia` (known to be _Windows-specific_) nor `'URW Bookman L'` (_Linux-specific_). If she were on Windows, she would get `Georgia`, as originally designed. The most common error over is to forget about other operating systems and specify the font as: 
+
+`'Some Font'`      
+
+It follows by appearance of default font on Linuces/MacOS, breaking the design.
+
+* *resolution* plays no role in _competent_ design. The font sizes *must* be specified in percents, rather than in rigid pixels: `100%;`.      
+
+Printers are to be handled more accurately—since CSS provides an ability to specify different stylesheets for different stays for designation of the device where the site appears for preview-printer,screen,tv or even voice generators medias†stays for designation of the device where the site appears for preview-printer,screen,tv or even voice generators† . The second line in the HTML fragment below shows how to affect another stylesheet for page printing: 
+
+```html      
+<link rel="stylesheet"
+      type="text/css"
+      href="css/main.css"
+      title="Main"
+      media="screen"/>
+<link rel="stylesheet"
+      type="text/css"
+      href="css/print.css"
+      title="Print"
+      media="print" /> 
+```
+
+This stylesheet is to remove all the vivid decorations, make text color _black-on-white_ and hide the top menu.
+
+That's it!
+
+* *decoration elements* are surely needed to make the site looking fine. Nobody loves _call-up-papers-styled_ austere _black-on-white_ proclamations. But each fishy decoration element, suspected to be treated _off-center_, must be supplied with standard patch. If the browser will reject to interpret shady code, it will turn back to patch, still showing the content properly (maybe not so vivid, but correct). For instance, Internet Explorer, web browser by Microsoft™, native for Windows operating systems IE†Internet Explorer, web browser by Microsoft™, native for Windows operating systems†  partially rejects usage of new, most up-to-date standard of CSS CSS2†new, most up-to-date standard of CSS†  and requires the following patch to be used.
+
+§4 Spangles
+
+Let's embellish a little bit the site now with pretty _non-standard_ but _safe-to-use_ (in terms it never breaks the behavior or violates the CSS compliance) spangles. The most browsers will colorize scrollbars if the following CSS piece is presented.
+
+That's definitely not necessary but it makes a design looking exclusive.  
+Ooh. Looks like it's time to finish with general things and turn back to the site itself.
+
+§3 What Are We To Publish
+
+To say the truth, we do not have tons of information to publish. Services we provide, article of trade, general analytical information to share and breaking, hmmm, news twice a month. We quarrelled with our bread and butter and after _half-day_ boxing decided not to put our photos on the site. Hopefully you see, how it was hard to compel ourselves; surely you understand how it was profitable for our site.  
+Well, no scaring measures of data—no bloody pulldown menus. Wow.  
+Single menu line (‘about’—‘services’—‘products’—‘for’customers'—‘news’... all the crap, you know) will be put somewhere on the top. Or, alternatively, at the bottom. Or even on the left. Never mind.  
+Contact information on each page—we are to earn money immediately as Jess wants to pay—nevertheless which page Jess is currently visiting. We can not force her to try to find where to call or whom to ask.  
+Some creative picture on the left (or on the right?—we'll then ask our designer about).  
+And—the plain information. Because we want to give information, to sell information; the information is our service.
+
+§4 A Glare Around
+
+How to decorate the site? Hey, Jess, what do you like? Pet photos or links to _five-year-old_ documents, _plain-text_ _black-tie_ pages or _white-on-red_ cursive font? How we will please you, for God's sake?  
+Actually, the question has an answer. Really! We are to sell information and we'll put it on board. Twenty percents love colored pictures of _camel-hunting_ safari, while eighty percents are still looking for the knowledge. And we'll make the text 20\% brighter, than pure black and the pictures will appear on every fifth page. Just kidding.  
+But we were not just kidding here. That's the point—we are to satisfy all the expectations. Virtually.  
+If we were allowed to pick up a new logo, we would be really free in color chase, but that is not a case. We already had a logo and it is brand brown. Hence our site's color spectrum will be in brown cold colors with orange to shine and emphasize.  
+The background is white or, at least, _nearly-white_, sorry for not mentioning this in the title.  
+Our information is never contained of a lot of text; we show _breaking ideas_ and want to make money on their conceptual development. Therefore we should think about how to shade the files in the flow. Blocks of ideas, filled with words ‘dramatically,’ ‘impressive,’ and ‘private expert.’  
+And, now, we are really ready to l─a─unch.
+
+§3 How To Publish 
+
+Do we need a Content Management System CMS†Content Management System† ? Well, yes. Even if at the moment being we have three pages of interest, tomorrow we will definitely have ten. Let's forget about The links leading to non-existent pages broken links†The links leading to non-existent pages† , incomplete menus (since new page was added, but forgotten to be mentioned in menu), HTML stuff. Our secretary will fulfill the site with information, as it arises. CMS *must* be used.  
+We have the only claim to CMS. It must be fully customizable, i.e it is to provide an ability to change the site look dramatically—via CSS.  
+That’s all.  
+Nope.  
+That is not.  
+Let’s think about more carefully. Who is to edit content? Who is to publish news? What is to be published? Likely we have answers and those are: our secretary, our secretary, documents prepared in _MS Word_ proprietary format. What does it mean? It means we should provide an _easy-to-become-familiar-with_ and _easy-to-use_ way to publish _MS Word_ documents as _HTML_ pages.  
+Who said ‘_save-as-html-menu-item_’? Please, off with you. We’re not kidding here, we are making a site.  
+So, there are two ways to accomplish the task: either to study our secretary to type in _html-like-formatted_ code, or to provide kinda _Word_ press a button and Word will produce normal html for you macro†press a button and Word will produce normal html for you† . We probably don't need to ask our secretary about what she prefers, huh?  
+Let's go on.
+
+* Do we need a forum? Well, yes. Maybe not now, but the correct answer is ‘well, yes.’ As soon as we have our frequenters on the site—we do need a forum.
+* Do we need a feedback? Certainly, yes.
+* _Test-it-now_ feature for all the services we provide?—Yes.
+* Buy now button?—Bet yourself.
+
+All the above means, we should think about _what_ CMS we are to pick up. And we surely will.
+
+§4 Making The Site
+
+There is nothing to say about. Install CMS, supply a design, test, enjoy.
+
+§3 Conclusion
+
+‘Hey,’ you are surely to ask, ‘why you damn decide to build *your* site not at the start of your _IT-business_?’
+  
+The answer goes as:
+
+Honestly, we were building not *our* site. We just built the site of *your competitor*.  We put all our knowledge and effort to make it the best. We were so empatic to feel their needs that we became virtually being themselves. Doing so we were able to understand their requirements keenly, to concoct their average client, to conform to their expectation.  
+And, if they are not satisfied with the result, we do repeat.
