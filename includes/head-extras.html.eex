@@ -12,5 +12,5 @@
 <meta data-preact-helmet name="twitter:image" content="<%= Path.join([@site.server_root, "card.png"])%>">
 <meta data-preact-helmet name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="<%= Path.join([@site.server_root, @page.url]) %>" />
-
 <link rel="stylesheet" href="<%= asset "css/ambment.css" %>">
+<a rel="me" href="https://mastodon.social/@mudasobwa">Mastodon</a>
