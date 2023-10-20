@@ -16,6 +16,11 @@ a:visited {
     color: #8040a0;
 }
 
+nav ul li {
+    display: inline-block;
+    margin: 0.5rem 0.2rem;
+}
+
 nav ul li a:hover {
     text-decoration: none;
 }
