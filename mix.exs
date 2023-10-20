@@ -19,7 +19,7 @@ defmodule Ambment.MixFile do
     [
       {:serum_md, "~> 1.6"},
       {:serum_theme_essence_md, "~> 1.2"},
-      {:floki, ">= 0.0.0"}
+      {:floki, "~> 0.34.0"}
     ]
   end
 end
