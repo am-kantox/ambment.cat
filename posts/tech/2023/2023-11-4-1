@@ -1,5 +1,11 @@
 Баги есть, отказов нет
 
+⇓первая часть «[четырех главных навыков](%post:2023-11-3-1) разработчика»⇓
+
+> умение гарантировать отказоустойчивость при наличии багов в коде
+
+---
+
 > Large systems will probably always be delivered containing a number of errors in the software, nevertheless such systems are expected to behave in a reasonable manner.  
 > ⇓Joe Armstrong⇓
 
