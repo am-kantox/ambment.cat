@@ -5,4 +5,5 @@
   <li><a href="<%= page "favorites" %>">💜</a></li>
   <li><a href="<%= base "posts" %>">📔</a></li>
   <li><a rel="me" href="https://mastodon.social/@mudasobwa">🐘</a></li>
+  <li><div id="search"></div></li>
 </ul>
