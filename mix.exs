@@ -19,6 +19,8 @@ defmodule Ambment.MixFile do
     [
       {:serum_md, "~> 1.6"},
       {:serum_theme_essence_md, "~> 1.2"},
+      # {:serum_md, path: "../Serum", override: true},
+      # {:serum_theme_essence_md, path: "../serum-theme-essence-md"},
       {:floki, "~> 0.34"}
     ]
   end

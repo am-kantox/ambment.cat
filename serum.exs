@@ -17,5 +17,5 @@
   pagination: true,
   posts_per_page: 25,
   preview_length: 200,
-  pretty_urls: false
+  pretty_urls: true
 }

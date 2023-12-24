@@ -29,3 +29,7 @@ nav ul li:before {
 nav ul li a:hover {
     text-decoration: none;
 }
+
+.prev_next {
+    font-size: 256%
+}
