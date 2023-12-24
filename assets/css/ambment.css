@@ -33,3 +33,8 @@ nav ul li a:hover {
 .prev_next {
     font-size: 256%
 }
+
+.prev_next a:hover {
+    text-decoration: none;
+    color: #d080ff;
+}
