@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MIX_ENV: dev
-    name: OTP ${{matrix.pair.otp}} / Elixir ${{matrix.pair.elixir}}
+    name: 💡 AmbMent Publishing
     strategy:
       fail-fast: true
       matrix:
@@ -19,7 +19,7 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
       
-      - name: 💧 Install Elixir/OTP
+      - name: 💧 Install OTP ${{matrix.pair.otp}} / Elixir ${{matrix.pair.elixir}}
         uses: erlef/setup-elixir@v1
         with:
           otp-version: ${{matrix.pair.otp}}

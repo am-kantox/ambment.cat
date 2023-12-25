@@ -10,12 +10,15 @@
     <meta data-preact-helmet name="description" content="<%= @page[:preview] %>" />
     <meta data-preact-helmet property="og:description" content="<%= @page[:preview] %>" />
     <meta data-preact-helmet name="twitter:description" content="<%= @page[:preview] %>" />
-    <meta data-preact-helmet property="og:image" content="<%= Path.join([@site.server_root, "card.png"])%>" />
-    <meta data-preact-helmet name="twitter:image" content="<%= Path.join([@site.server_root, "card.png"])%>" />
+    <meta data-preact-helmet property="og:image" content="<%= Path.join([@site.server_root, Map.get(@page.extras, :card, "card.png")]) %>" />
+    <meta data-preact-helmet name="twitter:image" content="<%= Path.join([@site.server_root, Map.get(@page.extras, :card, "card.png")]) %>" />
     <meta data-preact-helmet name="twitter:card" content="summary_large_image" />
     <link rel="canonical" href="<%= Path.join([@site.server_root, @page.url]) %>" />
-    <link rel="alternate" hreflang="ru" type="application/rss+xml" title="RSS Feed" href="https://ambment.cat/rss.xml" />
-    <link rel="icon" href="https://ambment.cat/favicon.ico" type="image/x-icon" />
+    <%= for {link, url} <- Map.get(@page.extras, :supplemental, []), url when not is_nil(url) <- [Serum.Build.fix_url(url)] do %>
+    <link rel="<%= link %>" href="<%= Path.join([@site.server_root, url]) %>"/>
+    <% end %>
+    <link rel="alternate" hreflang="ru" type="application/rss+xml" title="RSS Feed" href="<%= Path.join([@site.server_root, "rss.xml"]) %>" />
+    <link rel="icon" href="<%= Path.join([@site.server_root, "favicon.ico"]) %>" type="image/x-icon" />
     <link rel="stylesheet" href="<%= asset "css/ambment.css" %>" />
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
     <script src="/pagefind/pagefind-ui.js"></script>
