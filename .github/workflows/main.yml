@@ -48,3 +48,13 @@ jobs:
           local-dir: "./site/"
           server-dir: "./datos/web/"
           dry-run: false
+
+      - name: 🐘 Cross-post to Mastodon
+        if: "contains(github.event.head_commit.message, ':elephant:')"
+        env:
+          AUTH_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          MESSAGE: ${{ github.event.head_commit.message }}
+        run: |
+          npm i mastodon
+          npm i glob
+          node toot_it.js

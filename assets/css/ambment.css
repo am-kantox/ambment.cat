@@ -38,3 +38,8 @@ nav ul li a:hover {
     text-decoration: none;
     color: #d080ff;
 }
+
+code {
+    font-family: 'VictorMono Nerd Font', 'Roboto Mono', 'Menlo', 'Consolas', monospace;
+    font-size: smaller;
+}
