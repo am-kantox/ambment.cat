@@ -1,0 +1,58 @@
+GHA FTW
+
+Я стараюсь не разводить у себя на домашней машине лишних окружений. Виртуальная машина — как проститутка: легкодоступна, но для настоящего секса малопригодна. Докер был придуман, чтобы оправдать бессмысленную профессию «девопс», сделать Безоса еще богаче и сделать возможным и без того довольно тривиальный процесс разработки — доступным совсем уж дурачкам.
+
+```yaml
+name: 🚀 Build and Deploy on Push
+
+on: [push]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      MIX_ENV: dev
+    name: 💡 AmbMent Publishing
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - pair:
+              otp: 26.2
+              elixir: 1.16
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+      
+      - name: 💧 Install OTP ${{matrix.pair.otp}} / Elixir ${{matrix.pair.elixir}}
+        uses: erlef/setup-elixir@v1
+        with:
+          otp-version: ${{matrix.pair.otp}}
+          elixir-version: ${{matrix.pair.elixir}}
+
+      - name: 📜 Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: 💧 Build static site
+        run: |
+          mix do deps.get, deps.compile, compile
+          mix serum.build
+
+      - name: 🔎 Build Pagefind Index
+        run: |
+          npx -y pagefind --site "site"
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.AMBMENT_DOMAIN }}
+          username: ${{ secrets.AMBMENT_USER }}
+          password: ${{ secrets.AMBMENT_PASS }}
+          local-dir: "./site/"
+          server-dir: "./datos/web/"
+          dry-run: false
+```
+
+Осталось добавить воркер, который будет автоматически уведомлять мастодон о новой записи — и я буду почти доволен результатом.
