@@ -26,3 +26,8 @@ ambment-*.tar
 /site/
 
 /.elixir_ls/
+
+/node_modules/
+/package-lock.json
+/package.json
+

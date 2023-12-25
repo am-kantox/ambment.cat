@@ -21,10 +21,10 @@ const main = async () => {
     files = message[1];
     if (files === undefined) { files = '*' }
 
-    files = globSync(
-        files,
-        { cwd: './site/posts' }
-    ).sort(
+    const allFiles = globSync(files, { cwd: './site/posts' });
+    console.log(`Files: ${files}, Result: ${allFiles}`);
+
+    files = allFiles.sort(
         (a, b) => [a, b].map(
             (e) => e.slice(2).split("-").map(
                 (i) => parseInt(i)
@@ -46,7 +46,7 @@ const main = async () => {
     for (file of files) {
         post = `${message} https://ambment.cat/posts/${file}`
         console.log('Attempting to post: ' + post)
-        await client.post('statuses', { status: post }, function (err, data, response) {
+        client.post('statuses', { status: post }, function (err, data, response) {
             console.log(`Error: ${err}, Data: ${data}, Response: ${response}`)
         })
     }
