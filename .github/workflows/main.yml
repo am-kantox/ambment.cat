@@ -1,0 +1,50 @@
+name: 🚀 Build and Deploy on Push
+
+on: [push]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    env:
+      MIX_ENV: dev
+    name: OTP ${{matrix.pair.otp}} / Elixir ${{matrix.pair.elixir}}
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - pair:
+              otp: 26.2
+              elixir: 1.16
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+      
+      - name: 💧 Install Elixir/OTP
+        uses: erlef/setup-elixir@v1
+        with:
+          otp-version: ${{matrix.pair.otp}}
+          elixir-version: ${{matrix.pair.elixir}}
+
+      - name: 📜 Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: 💧 Build static site
+        run: |
+          mix do deps.get, deps.compile, compile
+          mix serum.build
+
+      - name: 🔎 Build Pagefind Index
+        run: |
+          npx -y pagefind --site "site"
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.AMBMENT_DOMAIN }}
+          username: ${{ secrets.AMBMENT_USER }}
+          password: ${{ secrets.AMBMENT_PASS }}
+          local-dir: "./site/"
+          server-dir: "./datos/web/"
+          dry-run: true
