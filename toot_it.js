@@ -17,10 +17,34 @@ const client = new Masto({
 })
 
 const main = async () => {
-    files = globSync(`${MESSAGE}`, { cwd: './site/posts' });
+    message = `${MESSAGE}`.split(" ");
+    files = message[1];
+    if (files === undefined) { files = '*' }
+
+    files = globSync(
+        files,
+        { cwd: './site/posts' }
+    ).sort(
+        (a, b) => [a, b].map(
+            (e) => e.slice(2).split("-").map(
+                (i) => parseInt(i)
+            ).reverse().reduce(
+                (a, b, idx) => a + b * 100 ** idx
+            )
+        ).reduce((a, b) => a > b ? -1 : 1)
+    );
+
+    if (files.length > 3) {
+        console.log(`Will NOT publish ${files.length} files (too many)`)
+        return null;
+    }
+
+    message = message.slice(2).join(' ');
+    if (message === '') { message = 'Написал вот:' }
+
     console.log(`Will publish ${files.length} files`)
     for (file of files) {
-        post = `Написал вот: https://ambment.cat/posts/${file}`
+        post = `${message} https://ambment.cat/posts/${file}`
         console.log('Attempting to post: ' + post)
         await client.post('statuses', { status: post }, function (err, data, response) {
             console.log(`Error: ${err}, Data: ${data}, Response: ${response}`)
