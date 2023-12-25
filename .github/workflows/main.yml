@@ -47,4 +47,4 @@ jobs:
           password: ${{ secrets.AMBMENT_PASS }}
           local-dir: "./site/"
           server-dir: "./datos/web/"
-          dry-run: true
+          dry-run: false
