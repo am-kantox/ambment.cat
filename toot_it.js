@@ -46,8 +46,8 @@ const main = async () => {
     for (file of files) {
         post = `${message} https://ambment.cat/posts/${file}`
         console.log('Attempting to post: ' + post)
-        client.post('statuses', { status: post }, function (err, data, response) {
-            console.log(`Error: ${err}, Data: ${data}, Response: ${response}`)
+        await client.post('statuses', { status: post }, function (err, data, response) {
+            console.log(`Success: ${err === undefined ? '✓' : '✗'}, Data: ${JSON.stringify(data, null, 4)}, Response: ${response.statusCode}`)
         })
     }
 }
