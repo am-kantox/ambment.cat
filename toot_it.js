@@ -22,16 +22,18 @@ const main = async () => {
     if (files === undefined) { files = '*' }
 
     const allFiles = globSync(files, { cwd: './site/posts' });
-    console.log(`Files: ${files}, Result: ${allFiles}`);
+    // console.log(`Files: ${files}, Result: ${allFiles}`);
 
     files = allFiles.sort(
         (a, b) => [a, b].map(
-            (e) => e.slice(2).split("-").map(
-                (i) => parseInt(i)
-            ).reverse().reduce(
-                (a, b, idx) => a + b * 100 ** idx
-            )
-        ).reduce((a, b) => a > b ? -1 : 1)
+            (e) => e.slice(2).split("-", 4)).map(
+                (e) => e.map(
+                    (s) => parseInt(s)
+                ).concat([0, 0, 0, 0])).map(
+                    (e) => e.slice(0, 4).reverse().reduce(
+                        (a, b, idx) => a + (idx === 0 ? 99 - b : b) * 100 ** idx
+                    )
+                ).reduce((a, b) => a >= b ? -1 : 1)
     );
 
     if (files.length > 3) {
