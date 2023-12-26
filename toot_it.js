@@ -20,6 +20,7 @@ const main = async () => {
     message = `${MESSAGE}`.split(" ");
     files = message[1];
     if (files === undefined) { files = '*' }
+    if (files.indexOf('*') === -1) { files = files + '*' }
 
     const allFiles = globSync(files, { cwd: './site/posts' });
     // console.log(`Files: ${files}, Result: ${allFiles}`);
