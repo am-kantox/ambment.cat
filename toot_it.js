@@ -37,9 +37,9 @@ const main = async () => {
                 ).reduce((a, b) => a >= b ? -1 : 1)
     );
 
-    if (files.length > 3) {
-        console.log(`Will NOT publish ${files.length} files (too many)`)
-        return null;
+    if (files.length > 2) {
+        console.log(`Too many files: ${files.length}, will publish the latest: ${files[0]}`)
+        files = [files[0]];
     }
 
     message = message.slice(2).join(' ');
