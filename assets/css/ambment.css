@@ -1,3 +1,14 @@
+@media (prefers-color-scheme: dark) {
+  body, #wrapper {
+    background: #201A20;
+    color: #E0DAE0;
+  }
+
+  header#top a:link, header#top a:active, header#top a:visited, header#top a:hover {
+    color: #E0CAE0;
+  }
+}
+
 a {
     text-decoration: none;
 }
