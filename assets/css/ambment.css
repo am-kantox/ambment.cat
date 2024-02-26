@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: dark) {
-  body, #wrapper {
+  body, #wrapper, #search {
     background: #201A20;
     color: #E0DAE0;
   }
