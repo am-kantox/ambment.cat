@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
   body, #wrapper, #search {
-    background: #201A20;
+    background: rgba(23, 25, 31, .9);
     color: #E0DAE0;
   }
 
