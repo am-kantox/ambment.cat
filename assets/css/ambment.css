@@ -1,56 +1,121 @@
-@media (prefers-color-scheme: dark) {
-  body, #wrapper, #search {
-    background: rgba(23, 25, 31, .9);
-    color: #E0DAE0;
-  }
+:root {
+  /* Light theme variables */
+  --background-light: #ECEFF4;
+  --text-light: #2E3440;
+  --primary-light: #5E81AC;
+  --secondary-light: #81A1C1;
+  --accent-light: #88C0D0;
+  --link-light: #5E81AC;
+  --link-visited-light: #81A1C1;
+  --link-hover-light: #88C0D0;
 
-  header#top a:link, header#top a:active, header#top a:visited, header#top a:hover {
-    color: #E0CAE0;
-  }
+  /* Dark theme variables */
+  --background-dark: #2E3440;
+  --text-dark: #ECEFF4;
+  --primary-dark: #88C0D0;
+  --secondary-dark: #81A1C1;
+  --accent-dark: #5E81AC;
+  --link-dark: #88C0D0;
+  --link-visited-dark: #81A1C1;
+  --link-hover-dark: #B48EAD;
+}
+
+body, #wrapper, #search {
+  background: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 a:link {
-    color: #b060f0;
+  color: var(--link-light);
 }
 
 a:active {
-    color: #d080ff;
-    text-decoration: wavy;
-    font-weight: bold;
+  color: var(--link-hover-light);
+  font-weight: bold;
 }
 
 a:visited {
-    color: #8040a0;
+  color: var(--link-visited-light);
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0.5rem 0.2rem;
+  display: inline-block;
+  margin: 0.5rem 0.2rem;
 }
 
 nav ul li:before {
-    content: '';
-    padding: 0;
+  content: '';
+  padding: 0;
 }
 
 nav ul li a:hover {
-    text-decoration: none;
+  text-decoration: none;
+  color: var(--accent-light);
 }
 
 .prev_next {
-    font-size: 256%
+  font-size: 256%;
 }
 
 .prev_next a:hover {
-    text-decoration: none;
-    color: #d080ff;
+  text-decoration: none;
+  color: var(--link-hover-light);
 }
 
 code {
-    font-family: 'VictorMono Nerd Font', 'Roboto Mono', 'Menlo', 'Consolas', monospace;
-    font-size: smaller;
+  font-family: 'VictorMono Nerd Font', 'Roboto Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 0.9em;
+  background: #D8DEE9;
+  color: #2E3440;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body, #wrapper, #search {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+
+  a:link {
+    color: var(--link-dark);
+  }
+
+  a:visited {
+    color: var(--link-visited-dark);
+  }
+
+  a:active {
+    color: var(--link-hover-dark);
+  }
+
+  a:hover {
+    color: var(--link-hover-dark);
+  }
+
+  header#top a:link, 
+  header#top a:active, 
+  header#top a:visited, 
+  header#top a:hover {
+    color: var(--text-dark);
+  }
+
+  nav ul li a:hover {
+    color: var(--accent-dark);
+  }
+
+  .prev_next a:hover {
+    color: var(--link-hover-dark);
+  }
+
+  code {
+    background: #3B4252;
+    color: #E5E9F0;
+  }
 }

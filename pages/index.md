@@ -17,7 +17,11 @@
 
 ---
 
-❤️‍🔥 [песни на мои стихи в исполнении Кристины Лёвланд](https://soundcloud.com/nott-lovland)
+❤️‍🔥 [песни на мои стихи в исполнении Кристины Лёвланд](https://soundcloud.com/nott-lovland)  
+  → [Однокость](https://soundcloud.com/nott-lovland/sets/odnokost)  
+  → [Антиутопия](https://soundcloud.com/nott-lovland/sets/antiutopiya)  
+  → [Зависть и месть](https://soundcloud.com/nott-lovland/sets/zavist-i-mest)  
+❤️‍🔥 [Ballads based on my lyrics performed by Allyx Foe](https://soundcloud.com/nott-lovland/sets/invidia-et-vindicta)
 
 ---
 
