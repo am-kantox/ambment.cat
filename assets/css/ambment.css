@@ -78,12 +78,13 @@ code {
 }
 
 @media (prefers-color-scheme: dark) {
-  body, #wrapper, #search {
+  body, #wrapper, #search, .pagefind-ui__result {
     background: var(--background-dark);
     color: var(--text-dark);
   }
 
-  a:link {
+
+  a:link, .pagefind-ui__result-link {
     color: var(--link-dark);
   }
 
