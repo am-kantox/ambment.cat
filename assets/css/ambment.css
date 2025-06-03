@@ -78,14 +78,14 @@ code {
 }
 
 @media (prefers-color-scheme: dark) {
-  body, #wrapper, #search, .pagefind-ui__result {
+  body, #wrapper, #search, .pagefind-ui__result, .pagefind-ui__result-title, .pagefind-ui__result-excerpt {
     background: var(--background-dark);
-    color: var(--text-dark);
+    color: var(--text-dark) !important;
   }
 
 
   a:link, .pagefind-ui__result-link {
-    color: var(--link-dark);
+    color: var(--link-dark) !important;
   }
 
   a:visited {
