@@ -31,6 +31,11 @@
 
     <link rel="alternate" hreflang="ru" type="application/rss+xml" title="RSS Feed" href="<%= Path.join([@site.server_root, "rss.xml"]) %>" />
     <link rel="icon" href="<%= Path.join([@site.server_root, "favicon.ico"]) %>" type="image/x-icon" />
+    <%= for size <- [16, 32, 72, 96, 114, 128, 195] do %>
+      <link rel="icon" href="favicon-<%= size %>x<%= size %>.png" sizes="<%= size %>x<%= size %>" type="image/png" />
+    <% end %>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180" />
+
     <link rel="stylesheet" href="<%= asset "css/ambment.css" %>" />
 
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
