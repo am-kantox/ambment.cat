@@ -21,7 +21,11 @@
   → [Однокость](https://soundcloud.com/nott-lovland/sets/odnokost)  
   → [Антиутопия](https://soundcloud.com/nott-lovland/sets/antiutopiya)  
   → [Зависть и месть](https://soundcloud.com/nott-lovland/sets/zavist-i-mest)  
-❤️‍🔥 [Ballads based on my lyrics performed by Allyx Foe](https://soundcloud.com/nott-lovland/sets/invidia-et-vindicta)
+  → [10](https://soundcloud.com/nott-lovland/sets/nl-x)
+
+❤️‍🔥 Ballads based on my lyrics performed by _Allyx Foe_
+  → [Invidia et Vindicta](https://soundcloud.com/nott-lovland/sets/invidia-et-vindicta)
+  → [10](https://soundcloud.com/nott-lovland/sets/af-x)
 
 ---
 
