@@ -32,3 +32,4 @@ ambment-*.tar
 /package-lock.json
 /package.json
 
+/.erl.history/
