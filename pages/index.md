@@ -23,8 +23,8 @@
   → [Зависть и месть](https://soundcloud.com/nott-lovland/sets/zavist-i-mest)  
   → [10](https://soundcloud.com/nott-lovland/sets/nl-x)
 
-❤️‍🔥 Ballads based on my lyrics performed by _Allyx Foe_
-  → [Invidia et Vindicta](https://soundcloud.com/nott-lovland/sets/invidia-et-vindicta)
+❤️‍🔥 Ballads based on my lyrics performed by _Allyx Foe_  
+  → [Invidia et Vindicta](https://soundcloud.com/nott-lovland/sets/invidia-et-vindicta)  
   → [10](https://soundcloud.com/nott-lovland/sets/af-x)
 
 ---
