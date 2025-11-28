@@ -13,8 +13,8 @@ jobs:
       matrix:
         include:
           - pair:
-              otp: 26.2
-              elixir: 1.16
+              otp: 28.2
+              elixir: 1.19
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
@@ -33,6 +33,7 @@ jobs:
       - name: 💧 Build static site
         run: |
           mix do deps.get, deps.compile, compile
+          rm -rf site
           mix serum.build
 
       - name: 🔎 Build Pagefind Index
