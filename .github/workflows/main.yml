@@ -38,7 +38,7 @@ jobs:
 
       - name: 🔎 Build Pagefind Index
         run: |
-          npx -y pagefind --site "site"
+          npx -y pagefind --site "site" --glob "posts/*.html"
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
