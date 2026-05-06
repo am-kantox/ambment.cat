@@ -18,6 +18,18 @@
   --link-dark: #88C0D0;
   --link-visited-dark: #81A1C1;
   --link-hover-dark: #B48EAD;
+
+  /* Pagefind UI -- light mode defaults */
+  --pagefind-ui-scale: 0.8;
+  --pagefind-ui-primary: #5E81AC;
+  --pagefind-ui-text: #2E3440;
+  --pagefind-ui-background: #ECEFF4;
+  --pagefind-ui-border: #D8DEE9;
+  --pagefind-ui-tag: #D8DEE9;
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
 }
 
 body, #wrapper, #search {
@@ -78,13 +90,24 @@ code {
 }
 
 @media (prefers-color-scheme: dark) {
-  body, #wrapper, #search, .pagefind-ui__result, .pagefind-ui__result-title, .pagefind-ui__result-excerpt {
-    background: var(--background-dark);
-    color: var(--text-dark) !important;
+  :root {
+    --pagefind-ui-primary: #88C0D0;
+    --pagefind-ui-text: #ECEFF4;
+    --pagefind-ui-background: #2E3440;
+    --pagefind-ui-border: #4C566A;
+    --pagefind-ui-tag: #4C566A;
   }
 
+  body, #wrapper, #search {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
 
-  a:link, .pagefind-ui__result-link {
+  a:link {
+    color: var(--link-dark);
+  }
+
+  .pagefind-ui__result-link {
     color: var(--link-dark) !important;
   }
 
