@@ -107,8 +107,21 @@ code {
     color: var(--link-dark);
   }
 
+  .pagefind-ui__search-input {
+    background: #3B4252 !important;
+    color: #ECEFF4 !important;
+  }
+
   .pagefind-ui__result-link {
     color: var(--link-dark) !important;
+  }
+
+  .pagefind-ui__result-excerpt {
+    color: #D8DEE9 !important;
+  }
+
+  .pagefind-ui__message {
+    color: #ECEFF4 !important;
   }
 
   a:visited {
