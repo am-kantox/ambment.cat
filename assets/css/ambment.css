@@ -32,6 +32,12 @@
   --pagefind-ui-image-box-ratio: 3 / 2;
 }
 
+/* Neutralize pagefind's "all: unset" so CSS variables propagate */
+.pagefind-ui {
+  color: var(--pagefind-ui-text) !important;
+  background: var(--pagefind-ui-background) !important;
+}
+
 body, #wrapper, #search {
   background: var(--background-light);
   color: var(--text-light);
