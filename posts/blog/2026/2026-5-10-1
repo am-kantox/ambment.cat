@@ -1,4 +1,4 @@
-# Regula Benedicti pro Assistantibus Artificialibus
+Regula Benedicti pro Assistantibus Artificialibus
 
 ## Пролог
 
@@ -84,9 +84,9 @@
 
 Ora et Labora заменяется на:
 
-> Cache et Infer.
+> **Cache et Infer**.
 
-Пусть ассистент трудится:
+Пусть ассистент без устали исполняет следующие задачи:
 
 - summarization;
 - retrieval;
