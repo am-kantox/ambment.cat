@@ -34,6 +34,7 @@
 
 /* Neutralize pagefind's "all: unset" so CSS variables propagate */
 .pagefind-ui {
+  all: revert !important;
   color: var(--pagefind-ui-text) !important;
   background: var(--pagefind-ui-background) !important;
 }
