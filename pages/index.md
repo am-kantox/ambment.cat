@@ -24,6 +24,8 @@
   → [10](https://soundcloud.com/nott-lovland/sets/nl-x)
 
 ❤️‍🔥 Ballads based on my lyrics performed by _Allyx Foe_  
+  → [The Divine Dive-In](https://soundcloud.com/nott-lovland/sets/the-divine-dive-in)  
+  → [Recovers](https://soundcloud.com/nott-lovland/sets/recovers-1)  
   → [Invidia et Vindicta](https://soundcloud.com/nott-lovland/sets/invidia-et-vindicta)  
   → [10](https://soundcloud.com/nott-lovland/sets/af-x)
 
@@ -36,7 +38,7 @@
 
 ---
 
-Можно попробовать меня потревожить: [📬](mailto:am@mudasobwa.ru).
+Можно попробовать меня потревожить: [📬](mailto:am@ambment.cat).
 
 Можно почитать мои рассказы [Рядовой Разнобердыев](%page:raznoberdyev) и [Записки маркера](%page:cuewager).
 
