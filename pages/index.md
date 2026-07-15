@@ -24,6 +24,7 @@
   → [10](https://soundcloud.com/nott-lovland/sets/nl-x)
 
 ❤️‍🔥 Ballads based on my lyrics performed by _Allyx Foe_  
+  → [BIOS](https://soundcloud.com/nott-lovland/sets/bios)  
   → [The Divine Dive-In](https://soundcloud.com/nott-lovland/sets/the-divine-dive-in)  
   → [Recovers](https://soundcloud.com/nott-lovland/sets/recovers-1)  
   → [Invidia et Vindicta](https://soundcloud.com/nott-lovland/sets/invidia-et-vindicta)  
@@ -159,6 +160,10 @@
 ---
 
 > _кто смел, тот и слаб_
+
+---
+
+[Hire me on Toptal](https://www.toptal.com/developers/resume/aleksei-matiushkin#aPyvrQ)
 
 ---
 
