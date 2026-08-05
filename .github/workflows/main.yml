@@ -31,6 +31,8 @@ jobs:
           node-version: 18
 
       - name: 💧 Build static site
+        env:
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
         run: |
           mix do deps.get, deps.compile, compile
           rm -rf site

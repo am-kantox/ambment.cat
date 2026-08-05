@@ -9,7 +9,18 @@
   plugins: [
     {Serum.Plugins.LiveReloader, only: :dev},
     Serum.Plugins.SitemapGenerator,
-    Serum.Plugins.RssGenerator
+    Serum.Plugins.RssGenerator,
+    # AT Protocol / standard.site integration
+    {Serum.Plugins.StandardSite,
+     handle: "mudasobwa.bsky.social",
+     app_password: System.get_env("BSKY_APP_PASSWORD")
+    },
+    # ActivityPub / Fediverse integration
+    {Serum.Plugins.ActivityPub,
+     username: "mudasobwa",        # Mastodon handle will be @blog@myblog.com
+     actor_path: "/actor.json",    # Optional, defaults to /actor.json
+     outbox_path: "/outbox.json"   # Optional, defaults to /outbox.json
+    }
   ],
   theme: Serum.Themes.Essence,
   list_title_all: "",
