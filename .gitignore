@@ -33,3 +33,6 @@ ambment-*.tar
 /package.json
 
 /.erl.history/
+
+/.dsh/
+/.ragex/
