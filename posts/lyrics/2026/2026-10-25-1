@@ -1,0 +1,77 @@
+The Gospel of Uncle Bob
+
+♫2425485774
+
+The server was weeping, the codebase was sick,  
+The functions were bulky, the classes too thick!  
+A spaghetti monster had swallowed the screen,  
+With variables dirty and logic obscene.  
+Then out of the clouds, with a halo of white,  
+Stepped Uncle Bob Martin, the Apostle of Light!
+
+He carried two tablets of polished oak wood:  
+“Thou shalt not write code that is merely just good!  
+Repent of your loops! Drop your dirty else clause!  
+For I bring the holy, unchangeable laws!  
+The Boy Scout is here with a broom and a mop,  
+And until you refactor, no coffee, no stop!”
+
+“A function,” he bellowed, “must do just one thing!  
+It shouldn’t drink water, it shouldn’t dance, sing!  
+And if it has three lines, it’s bloated with sin!  
+Chop two lines away, throw them straight in the bin!  
+If you need an if-statement, you’ve failed as a man—  
+Replace it with fifty small classes that ran!
+
+And names! What a horror! What sloppy design!  
+Don’t name a thing i, or data, or line!  
+Call it: TemporaryContextualUserDateSpanFactoryRegistryManagerPlan!  
+If your names aren’t a paragraph printed in red,  
+Then you might as well stay in your amateur bed!”
+
+“Comments are failures!” he preached to the crowd,  
+His vein on his forehead pulsating and proud.  
+“If you leave an inline note to tell what you did,  
+You’re a cowardly slug and an ignorant kid!  
+Delete every summary, explanation, and note!  
+The code is the poem! The code is the boat!  
+If someone can’t read your abstractions in Greek,  
+Just fire that mortal, he’s hopelessly weak!”
+
+No arguments either! “One argument’s fine,  
+Two is a crime against nature divine!  
+And three? That’s a blasphemy worthy of Hell!  
+Wrap them in objects and hide them real well!  
+Wrap x, y, and z in a `PointHolderClass`,  
+Then wrap that inside of a `CoordinateMass`!”
+
+The SOLID Cathedral of Air  
+“Follow the S-O-L-I and the D!  
+The five golden letters that set mankind free!  
+Never use new! That is vulgar and crude!  
+Inject dependencies naked and nude!  
+Build thirty-six layers of pure Interface,  
+To calculate sales tax in one simple place!”
+
+Now checking the time takes a hundred and four  
+Sub-factories spinning outside of the door:
+`AbstractTimeProviderLocatorImpl`,  
+Connecting to `ClockObserverEntityMill`!  
+The program does nothing, it freezes the RAM,  
+It crashes the browser, it stalls every dam—  
+“It runs at one frame every seven full hours,”  
+Cried the dev, “and it uses gigawatts of powers!”
+
+“Who cares about performance?!” Bob cheered with delight,  
+“The code is immaculately, cleanly polite!  
+It’s decoupled, abstracted, and perfectly dry!  
+It doesn’t work, true, but it pleases the sky!”
+
+× × ×
+
+So praise the great guru of classes and mocks,  
+Who locked the whole industry inside a box!  
+The program is dead, not a feature will start,  
+But gaze at the purity! Marvel the art!  
+The screen is bone-white and the memory clean—  
+The emptiest garbage the world’s ever seen!
